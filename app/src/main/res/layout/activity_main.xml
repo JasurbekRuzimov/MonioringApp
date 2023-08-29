@@ -445,7 +445,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
                             android:fontFamily="@font/montserrat_medium"
-                            android:text="30"
+                            android:text="0"
                             android:textColor="@color/colorPrimary"
                             android:textSize="25sp"
                             android:textStyle="bold"
@@ -494,7 +494,7 @@
                     android:scrollbarStyle="insideInset"
                     android:scrollbars="vertical"
                     app:cardCornerRadius="10dp"
-                    app:cardElevation="5dp"
+                    app:cardElevation="10dp"
                     app:cardUseCompatPadding="true">
 
                     <TextView
@@ -513,48 +513,31 @@
                         android:layout_margin="10dp"
                         android:padding="5dp">
 
-
-                        <TextView
-                            android:id="@+id/allPrChart_txt"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:fontFamily="@font/montserrat_medium"
-                            android:text="30"
-                            android:textColor="@color/colorPrimary"
-                            android:textSize="25sp"
-                            android:textStyle="bold"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="@+id/allChartName_txt"
-                            app:layout_constraintStart_toStartOf="@+id/allChartName_txt"
-                            app:layout_constraintTop_toBottomOf="@+id/allChartName_txt"
-                            app:layout_constraintVertical_bias="1.0"
-                            tools:ignore="HardcodedText" />
-
                         <TextView
                             android:id="@+id/allChartName_txt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="3dp"
                             android:fontFamily="@font/montserrat_medium"
                             android:text="Loyihalar soni"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="bold"
-                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.29"
                             tools:ignore="HardcodedText" />
 
                         <ImageView
                             android:id="@+id/image6"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_marginEnd="16dp"
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="8dp"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/allChartName_txt"
+                            app:layout_constraintStart_toStartOf="@+id/allChartName_txt"
+                            app:layout_constraintTop_toBottomOf="@+id/allChartName_txt"
                             app:srcCompat="@drawable/calendar"
                             tools:ignore="ContentDescription,MissingConstraints" />
 
@@ -569,7 +552,7 @@
                     android:scrollbarStyle="insideInset"
                     android:scrollbars="vertical"
                     app:cardCornerRadius="10dp"
-                    app:cardElevation="5dp"
+                    app:cardElevation="10dp"
                     app:cardUseCompatPadding="true">
 
                     <TextView
@@ -590,46 +573,31 @@
 
 
                         <TextView
-                            android:id="@+id/prQiymatiName_txt"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:fontFamily="@font/montserrat_medium"
-                            android:text="30"
-                            android:textColor="@color/colorPrimary"
-                            android:textSize="25sp"
-                            android:textStyle="bold"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="@+id/prQiymatiName"
-                            app:layout_constraintStart_toStartOf="@+id/prQiymatiName"
-                            app:layout_constraintTop_toBottomOf="@+id/prQiymatiName"
-                            app:layout_constraintVertical_bias="1.0"
-                            tools:ignore="HardcodedText" />
-
-                        <TextView
                             android:id="@+id/prQiymatiName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="4dp"
                             android:fontFamily="@font/montserrat_medium"
                             android:text="Loyihalar qiymati"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="bold"
-                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.29"
                             tools:ignore="HardcodedText" />
 
                         <ImageView
                             android:id="@+id/image7"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="16dp"
                             android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="8dp"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/prQiymatiName"
+                            app:layout_constraintStart_toStartOf="@+id/prQiymatiName"
+                            app:layout_constraintTop_toBottomOf="@+id/prQiymatiName"
                             app:srcCompat="@drawable/calendar"
                             tools:ignore="ContentDescription,MissingConstraints" />
 
@@ -644,7 +612,7 @@
                     android:scrollbarStyle="insideInset"
                     android:scrollbars="vertical"
                     app:cardCornerRadius="10dp"
-                    app:cardElevation="5dp"
+                    app:cardElevation="10dp"
                     app:cardUseCompatPadding="true">
 
                     <TextView
@@ -665,46 +633,30 @@
 
 
                         <TextView
-                            android:id="@+id/ishOrni_txt"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:fontFamily="@font/montserrat_medium"
-                            android:text="30"
-                            android:textColor="@color/colorPrimary"
-                            android:textSize="25sp"
-                            android:textStyle="bold"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="@+id/ishOrniName_txt"
-                            app:layout_constraintStart_toStartOf="@+id/ishOrniName_txt"
-                            app:layout_constraintTop_toBottomOf="@+id/ishOrniName_txt"
-                            app:layout_constraintVertical_bias="1.0"
-                            tools:ignore="HardcodedText" />
-
-                        <TextView
                             android:id="@+id/ishOrniName_txt"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="60dp"
+                            android:layout_marginTop="4dp"
                             android:fontFamily="@font/montserrat_medium"
                             android:text="Loyihalar ish o'rni"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="bold"
-                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintVertical_bias="0.29"
                             tools:ignore="HardcodedText" />
 
                         <ImageView
                             android:id="@+id/image8"
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_marginEnd="16dp"
+                            android:layout_width="250dp"
+                            android:layout_height="250dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="8dp"
                             app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="@+id/ishOrniName_txt"
+                            app:layout_constraintStart_toStartOf="@+id/ishOrniName_txt"
+                            app:layout_constraintTop_toBottomOf="@+id/ishOrniName_txt"
                             app:srcCompat="@drawable/calendar"
                             tools:ignore="ContentDescription,MissingConstraints" />
 
