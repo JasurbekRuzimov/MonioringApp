@@ -3,9 +3,12 @@ package uz.jasurbekruzimov.monitoringapp;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -25,7 +28,9 @@ public class SignIn extends AppCompatActivity {
     TextInputEditText emailAddress, password;
     Button signInBtn;
 
+    TextView forgotPassword;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +39,7 @@ public class SignIn extends AppCompatActivity {
         emailAddress = findViewById(R.id.emailLoginId);
         password = findViewById(R.id.passwordLoginId);
         signInBtn = findViewById(R.id.signInBtn);
-
+        forgotPassword=findViewById(R.id.forgotPassword);
 
         signInBtn.setOnClickListener(v -> {
             String email = Objects.requireNonNull(emailAddress.getText()).toString().trim();
@@ -81,5 +86,15 @@ public class SignIn extends AppCompatActivity {
                 }
             });
         });
+
+        forgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SignIn.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
     }
 }

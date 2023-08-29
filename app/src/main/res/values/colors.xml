@@ -3,5 +3,10 @@
     <color name="colorPrimary">#2051E5</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="red">#FC1100</color>
+    <color name="yellow">#FDE615</color>
+    <color name="pink">#DA00FF</color>
+    <color name="green">#04E80D</color>
+    <color name="gray">#4A4D4D</color>
     <color name="rectangleBackground">#EEF2FF</color>
 </resources>
