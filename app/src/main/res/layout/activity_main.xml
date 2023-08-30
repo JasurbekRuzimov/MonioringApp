@@ -499,7 +499,7 @@
 
                     <TextView
                         android:layout_width="8dp"
-                        android:layout_height="60dp"
+                        android:layout_height="200dp"
                         android:layout_gravity="center|left"
                         android:background="@drawable/srec_green"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -528,12 +528,11 @@
                             app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="HardcodedText" />
 
-                        <ImageView
-                            android:id="@+id/image6"
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/allCHart"
                             android:layout_width="250dp"
                             android:layout_height="250dp"
                             android:layout_marginTop="16dp"
-                            android:layout_marginBottom="8dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="@+id/allChartName_txt"
                             app:layout_constraintStart_toStartOf="@+id/allChartName_txt"
@@ -557,7 +556,7 @@
 
                     <TextView
                         android:layout_width="8dp"
-                        android:layout_height="60dp"
+                        android:layout_height="200dp"
                         android:layout_gravity="center|left"
                         android:background="@drawable/srec_red"
                         app:layout_constraintBottom_toBottomOf="parent"
@@ -587,18 +586,15 @@
                             app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="HardcodedText" />
 
-                        <ImageView
-                            android:id="@+id/image7"
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/prQiymatiCHart"
                             android:layout_width="250dp"
                             android:layout_height="250dp"
                             android:layout_marginTop="16dp"
-                            android:layout_marginEnd="16dp"
-                            android:layout_marginBottom="8dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="@+id/prQiymatiName"
                             app:layout_constraintStart_toStartOf="@+id/prQiymatiName"
                             app:layout_constraintTop_toBottomOf="@+id/prQiymatiName"
-                            app:srcCompat="@drawable/calendar"
                             tools:ignore="ContentDescription,MissingConstraints" />
 
 
@@ -617,9 +613,9 @@
 
                     <TextView
                         android:layout_width="8dp"
-                        android:layout_height="60dp"
-                        android:background="@drawable/srec_back"
+                        android:layout_height="200dp"
                         android:layout_gravity="center|left"
+                        android:background="@drawable/srec_back"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -647,18 +643,15 @@
                             app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="HardcodedText" />
 
-                        <ImageView
-                            android:id="@+id/image8"
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:id="@+id/ishOrniCHart"
                             android:layout_width="250dp"
                             android:layout_height="250dp"
                             android:layout_marginTop="16dp"
-                            android:layout_marginBottom="8dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="@+id/ishOrniName_txt"
                             app:layout_constraintStart_toStartOf="@+id/ishOrniName_txt"
-                            app:layout_constraintTop_toBottomOf="@+id/ishOrniName_txt"
-                            app:srcCompat="@drawable/calendar"
-                            tools:ignore="ContentDescription,MissingConstraints" />
+                            app:layout_constraintTop_toBottomOf="@+id/ishOrniName_txt" />
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
