@@ -6,8 +6,18 @@ import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.POST;
 
 public interface ApiInterface {
-    @FormUrlEncoded
-    @POST("login")
-    Call<LoginResponse> loginWithCredentials(@Field("email") String email, @Field("password") String password);
 
+    @POST("login") // Endpoint nomi
+    Call<LoginResponse> loginUser(
+            @Field("email") String email,
+            @Field("password") String password
+    );
+
+    @FormUrlEncoded
+    @POST("mobile/dashboard")
+    Call<DashboardResponse>dashboard(
+            @Field("all") int all,
+            @Field("on_progress") int progress,
+            @Field("succcessfullProjects") int sccsPr
+            );
 }

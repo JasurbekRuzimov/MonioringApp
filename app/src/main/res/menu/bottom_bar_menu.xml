@@ -3,25 +3,25 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     tools:ignore="MissingDefaultResource">
 
-    <item
-        android:id="@+id/nav_home"
-        android:icon="@drawable/home"
-        android:title="Home"
-        tools:ignore="HardcodedText" />
+<!--    <item-->
+<!--        android:id="@+id/nav_home"-->
+<!--        android:icon="@drawable/home"-->
+<!--        android:title="Home"-->
+<!--        tools:ignore="HardcodedText" />-->
 
-    <item
-        android:id="@+id/nav_message"
-        android:icon="@drawable/message"
-        android:title="Message" />
+<!--    <item-->
+<!--        android:id="@+id/nav_message"-->
+<!--        android:icon="@drawable/message"-->
+<!--        android:title="Message" />-->
 
-    <item
-        android:id="@+id/nav_calendar"
-        android:icon="@drawable/calendar"
-        android:title="Calendar" />
+<!--    <item-->
+<!--        android:id="@+id/nav_calendar"-->
+<!--        android:icon="@drawable/calendar"-->
+<!--        android:title="Calendar" />-->
 
-    <item
-        android:id="@+id/nav_profile"
-        android:icon="@drawable/profile"
-        android:title="Profile" />
+<!--    <item-->
+<!--        android:id="@+id/nav_profile"-->
+<!--        android:icon="@drawable/profile"-->
+<!--        android:title="Profile" />-->
 
 </menu>

@@ -39,7 +39,7 @@ public class SignIn extends AppCompatActivity {
         emailAddress = findViewById(R.id.emailLoginId);
         password = findViewById(R.id.passwordLoginId);
         signInBtn = findViewById(R.id.signInBtn);
-        forgotPassword=findViewById(R.id.forgotPassword);
+        forgotPassword = findViewById(R.id.forgotPassword);
 
         signInBtn.setOnClickListener(v -> {
             String email = Objects.requireNonNull(emailAddress.getText()).toString().trim();
@@ -55,37 +55,38 @@ public class SignIn extends AppCompatActivity {
                 password.requestFocus();
                 return;
             }
-
-            ApiInterface loginApi = ApiClient.getLoginApi();
-            Call<LoginResponse> call = loginApi.loginWithCredentials(email, pass);
-
-            call.enqueue(new Callback<LoginResponse>() {
-
-                @Override
-                public void onResponse(@NonNull Call<LoginResponse> call, @NonNull Response<LoginResponse> response) {
-                    if (response.isSuccessful()) {
-                        LoginResponse loginResponse = response.body();
-                        boolean success = Objects.requireNonNull(loginResponse).isSuccess();
-                        String message = loginResponse.getMessage();
-
-                        if (success) {
-                            Intent intent = new Intent(SignIn.this, MainActivity.class);
-                            startActivity(intent);
-                            finish();
-                        } else {
-                            Toast.makeText(SignIn.this, message, Toast.LENGTH_SHORT).show();
-                        }
-                    } else {
-                        Toast.makeText(SignIn.this, getString(R.string.server_error), Toast.LENGTH_SHORT).show();
-                    }
-                }
-
-                @Override
-                public void onFailure(@NonNull Call<LoginResponse> call, @NonNull Throwable t) {
-                    Toast.makeText(SignIn.this, t.getMessage(), Toast.LENGTH_SHORT).show();
-                }
-            });
+//
+//            ApiInterface loginApi = ApiClient.getLoginApi();
+//            Call<LoginResponse> call = loginApi.loginWithCredentials(email, pass);
+//
+//            call.enqueue(new Callback<LoginResponse>() {
+//
+//                @Override
+//                public void onResponse(@NonNull Call<LoginResponse> call, @NonNull Response<LoginResponse> response) {
+//                    if (response.isSuccessful()) {
+//                        LoginResponse loginResponse = response.body();
+//                        boolean success = Objects.requireNonNull(loginResponse).isSuccess();
+//                        String message = loginResponse.getMessage();
+//
+//                        if (success) {
+//                            Intent intent = new Intent(SignIn.this, MainActivity.class);
+//                            startActivity(intent);
+//                            finish();
+//                        } else {
+//                            Toast.makeText(SignIn.this, message, Toast.LENGTH_SHORT).show();
+//                        }
+//                    } else {
+//                        Toast.makeText(SignIn.this, getString(R.string.server_error), Toast.LENGTH_SHORT).show();
+//                    }
+//                }
+//
+//                @Override
+//                public void onFailure(@NonNull Call<LoginResponse> call, @NonNull Throwable t) {
+//                    Toast.makeText(SignIn.this, t.getMessage(), Toast.LENGTH_SHORT).show();
+//                }
+//            });
         });
+
 
         forgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override

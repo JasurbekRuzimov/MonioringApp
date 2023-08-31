@@ -18,11 +18,14 @@ import com.github.mikephil.charting.utils.ColorTemplate;
 
 import java.util.ArrayList;
 
+import retrofit2.Retrofit;
+
 public class MainActivity extends AppCompatActivity {
 
     DrawerLayout drawerLayout;
     ImageView navImg;
     PieChart pieChart3, pieChart1, pieChart2;
+    Retrofit retrofit;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -35,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
         pieChart1 = findViewById(R.id.allCHart);
         pieChart2 = findViewById(R.id.prQiymatiCHart);
         pieChart3 = findViewById(R.id.ishOrniCHart);
-
 
         ArrayList<PieEntry> visitors = new ArrayList<>();
         visitors.add(new PieEntry(500, 2023));
@@ -57,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
         pieChart2.setData(pieData);
         pieChart2.getDescription().setEnabled(false);
-        pieChart2.setCenterText("loyihalar qiymati");
+        pieChart2.setCenterText("Loyihalar qiymati");
         pieChart2.animate();
 
         pieChart3.setData(pieData);

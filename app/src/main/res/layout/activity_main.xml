@@ -52,15 +52,15 @@
 
             <ImageView
                 android:id="@+id/nav_menu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_marginEnd="24dp"
                 android:layout_marginBottom="41dp"
                 android:tint="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/menu"
+                app:srcCompat="@drawable/baseline_menu_24"
                 tools:ignore="UseAppTint" />
 
             <ImageView
@@ -82,9 +82,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="132dp"
-            android:layout_marginBottom="78dp"
+            android:layout_marginBottom="2dp"
             android:scrollbars="vertical"
-            app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+            app:layout_constraintBottom_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
@@ -180,8 +180,9 @@
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/menu"
-                            tools:ignore="ContentDescription,MissingConstraints" />
+                            app:srcCompat="@drawable/round_text_snippet_24"
+                            android:tint="@color/colorPrimary"
+                            tools:ignore="ContentDescription,MissingConstraints,UseAppTint" />
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -255,8 +256,9 @@
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/calendar"
-                            tools:ignore="ContentDescription,MissingConstraints" />
+                            app:srcCompat="@drawable/baseline_recycling_24"
+                            android:tint="@color/colorPrimary"
+                            tools:ignore="ContentDescription,MissingConstraints,UseAppTint" />
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -330,8 +332,9 @@
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/calendar"
-                            tools:ignore="ContentDescription,MissingConstraints" />
+                            app:srcCompat="@drawable/baseline_settings_suggest_24"
+                            android:tint="@color/colorPrimary"
+                            tools:ignore="ContentDescription,MissingConstraints,UseAppTint" />
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -405,8 +408,9 @@
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/calendar"
-                            tools:ignore="ContentDescription,MissingConstraints" />
+                            app:srcCompat="@drawable/baseline_request_quote_24"
+                            android:tint="@color/colorPrimary"
+                            tools:ignore="ContentDescription,MissingConstraints,UseAppTint" />
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -480,8 +484,9 @@
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-                            app:srcCompat="@drawable/calendar"
-                            tools:ignore="ContentDescription,MissingConstraints" />
+                            app:srcCompat="@drawable/baseline_assignment_late_24"
+                            android:tint="@color/colorPrimary"
+                            tools:ignore="ContentDescription,MissingConstraints,UseAppTint" />
 
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -663,21 +668,21 @@
         </ScrollView>
 
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="75dp"
-            android:layout_gravity="bottom"
-            android:background="@color/white"
-            app:itemIconTint="@color/colorPrimary"
-            app:itemTextColor="@color/black"
-            app:labelVisibilityMode="labeled"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:menu="@menu/bottom_bar_menu">
+<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--            android:id="@+id/bottom_navigation"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="75dp"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:background="@color/white"-->
+<!--            app:itemIconTint="@color/colorPrimary"-->
+<!--            app:itemTextColor="@color/black"-->
+<!--            app:labelVisibilityMode="labeled"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:menu="@menu/bottom_bar_menu">-->
 
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
+<!--        </com.google.android.material.bottomnavigation.BottomNavigationView>-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
